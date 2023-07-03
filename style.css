@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+#root{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 35vw; */
+}
+#base,#plate{
+    width: 35vw;
+}
+#base{
+    background: #24232B;
+    height: 8vh;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.9rem; 
+    color: #53525A;
+}
+#plate{
+    font-weight: 550;
+    letter-spacing: -0.5px;
+    background: #24232B;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 0px;
+    font-size: 1.9rem; 
+    color: #ffffff;
+}
+#display{
+    display: flex; 
+    padding: 0px 40px;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+}
+#ranger{
+    appearance: none;
+    outline: none;
+    background: #19171F;
+    border-radius: 15px;
+    height: 7px;
+}
+#ranger::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+#inputs{
+    padding-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    padding: 10px 30px;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    gap: 20px 20px;
+}
+.constraints{
+    display: flex;
+    flex-direction: row;
+}
+.constraints input{
+    margin-top: 2px;
+    margin-right: 1vw;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    background: #24232B;
+    border: 2.5px solid #ffffff;
+    border-radius: 3px;
+}
+input[type="checkbox"]:checked{
+    background: #A4FFAF;
+}
+#strength{
+    margin: 10px 30px;
+    padding: 0px 30px;
+    background-color: #18171F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1rem;
+    color:#82808E;
+    height: 7vh;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#level{
+    /* padding-left: 100px; */
+    display: flex;
+    flex-direction: row;
+}
+.levels{
+    margin: 0px 2.5px;
+    height: 3.3vh;
+    width: 0.3vw;
+    /* background-color: #A4FFAF; */
+    border: 2.5px solid #ffffff;
+}
+#gen{
+    margin: 20px 30px;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #A4FFAF;
+    align-items: center;
+    color: #000;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;    
+}
