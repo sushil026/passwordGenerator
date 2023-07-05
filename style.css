@@ -11,7 +11,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width: 35vw; */
 }
 #base,#plate{
     width: 35vw;
@@ -51,6 +50,7 @@
     background: #19171F;
     border-radius: 15px;
     height: 7px;
+    transition: background 0.2s ease;
 }
 #ranger::-webkit-slider-thumb{
     appearance: none;
@@ -61,8 +61,12 @@
     cursor: pointer;
     z-index: 3;
     position: relative;
+    transition: background 0.5s ease;
 }
 
+#ranger::-webkit-slider-thumb:hover{
+    box-shadow: #506552 0px 0px 15px 8px;
+}
 #inputs{
     padding-top: 40px;
     display: flex; 
@@ -106,7 +110,6 @@ input[type="checkbox"]:checked{
     letter-spacing: 1px;
 }
 #level{
-    /* padding-left: 100px; */
     display: flex;
     flex-direction: row;
 }
@@ -114,7 +117,6 @@ input[type="checkbox"]:checked{
     margin: 0px 2.5px;
     height: 3.3vh;
     width: 0.3vw;
-    /* background-color: #A4FFAF; */
     border: 2.5px solid #ffffff;
 }
 #gen{
@@ -129,4 +131,11 @@ input[type="checkbox"]:checked{
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 1px;    
+}
+#gen:hover{
+    background-color: #A4FFAF;
+    color: #000;
+    /* height: 8vh; */
+    box-shadow: #A4FFAF 0px 0px 0px 2px;
+    cursor: pointer;
 }
