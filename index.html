@@ -13,8 +13,8 @@
     <div id="root" style="margin: 0;">
         <h2 style="color: #7e7c89; font-size: 1.1rem; text-align: center; line-height: 3; letter-spacing: 0.1rem;">Password Generator</h2>
         <div id="base">
-            <p style="margin-left: 30px;">P4$5W0rD!</p>
-            <img src="image/Vector.png" style="margin-right: 30px;" height="20px">
+            <p id="pswd" style="margin-left: 30px;">P4$5W0rD!</p>
+            <img src="image/Vector.png" style="margin-right: 30px;" height="20px" onclick="copy()">
         </div>
         <div id="plate">
             <div id="display">
@@ -23,22 +23,22 @@
             </div>
             <div id="inputs">
                 <div id="rng" style="margin: 0px 15px;">
-                    <input type="range" value="0" min="0" max="10" style="width: 100%;" id="ranger" oninput="ranger(),display()">
+                    <input type="range" value="0" min="0" max="10" style="width: 100%;" id="ranger" oninput="ranger(), display()">
                 </div>
                 <span class="constraints">
-                    <input type="checkbox" name="" id="Uppercase">
+                    <input type="checkbox" id="Uppercase" onchange="checkUc(), strong()">
                     <label for="Uppercase">Include Uppercase Letters</label>
                 </span>
                 <span class="constraints">
-                    <input type="checkbox" name="" id="Lowercase">
+                    <input type="checkbox" id="Lowercase" onchange="checkLc(), strong()">
                     <label for="Lowercase">Include Lowercase Letters</label>
                 </span>
                 <span class="constraints">
-                    <input type="checkbox" name="" id="Numbers">
+                    <input type="checkbox" id="Numbers" onchange="checkNum(), strong()">
                     <label for="Numbers">Include Numbers</label>
                 </span>
                 <span class="constraints">
-                    <input type="checkbox" name="" id="Symbols">
+                    <input type="checkbox" id="Symbols" onchange="checkSym(), strong()">
                     <label for="Symbols">Include Symbols</label>
                 </span>
             </div>
